@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20230920104825_ShippingMethodInit.cs" />
+    <Compile Remove="Migrations\20230920104825_ShippingMethodInit.Designer.cs" />
+    <Compile Remove="Migrations\20230926071917_addFkRoleIdinUser.cs" />
+    <Compile Remove="Migrations\20230926071917_addFkRoleIdinUser.Designer.cs" />
+    <Compile Remove="Migrations\20230930060646_idvaluegenerateonAddTag.cs" />
+    <Compile Remove="Migrations\20230930060646_idvaluegenerateonAddTag.Designer.cs" />
+    <Compile Remove="Migrations\20230930061051_removeidfrominvoicetag.cs" />
+    <Compile Remove="Migrations\20230930061051_removeidfrominvoicetag.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.0.19" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AccountErp.Infrastructure\AccountErp.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
